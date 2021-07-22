@@ -3,6 +3,39 @@
     background-color: rgba(50, 0, 0, 0.25);
 }
 /*////debugger*/
+/* common rules */
+ul{
+    list-style: none;
+}
+main{
+    margin-top: 5rem;
+}
+section{
+    margin-bottom: 50px;
+}
+.banner__big{
+    padding: 200px 20px 20px 20px;
+}
+.carousel>*{
+    padding: 10px;
+}
+.carousel img{
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel div:hover img{
+    padding: 4px;
+    border: 2px solid lightskyblue;
+}
+main button{
+    padding: 0 15px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border-width: 0;
+}
+/* ////common rules */
+/* header */
 header{
     background-color: black;
     width: 100%;
@@ -21,26 +54,19 @@ header{
 .header__bottom nav{
     width: 100%;
 }
-ul{
-    list-style: none;
-}
-main{
-    margin-top: 5rem;
-}
-.banner__big{
-    padding: 200px 20px 20px 20px;
-}
+/* ////header */
+/* most sold */
 #most__sold .banner__big{
     background-image: url("../img/jumbo-bg.png");
     background-position:50% 0%;
 }
-.carousel>*{
-    padding: 10px;
+#most__sold *{
+    color: white;
 }
-.carousel img{
-    width: 100%;
-    border-radius: 10px;
-}
-.returnal__logo{
+#most__sold .returnal__logo{
     width: 150px;
 }
+/* ////most sold */
+/*playstation five*/
+
+/*////playstation five*/
