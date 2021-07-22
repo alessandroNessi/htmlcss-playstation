@@ -41,6 +41,9 @@ main button{
 #new__exit *, #most__sold *{
     color: white;
 }
+.banner__small img{
+    width: 100%;
+}
 /*////banner rules*/
 /* ////common rules */
 /* header */
