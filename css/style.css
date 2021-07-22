@@ -19,3 +19,6 @@ header{
 .header__bottom nav{
     width: 100%;
 }
+ul{
+    list-style: none;
+}
