@@ -22,10 +22,7 @@ section{
 .carousel img{
     width: 100%;
     border-radius: 10px;
-}
-.carousel div:hover img{
-    padding: 4px;
-    border: 2px solid lightskyblue;
+    display: block;
 }
 main button{
     padding: 0 15px;
@@ -66,7 +63,27 @@ header{
 #most__sold .returnal__logo{
     width: 150px;
 }
+#most__sold .carousel div:hover img{
+   padding: 4px;
+    width: calc(100% - 10px);
+    border:2px solid lightskyblue;
+}
 /* ////most sold */
 /*playstation five*/
+#playstation__five .comment{
+    margin-bottom: 0;
+    color: lightskyblue;
+}
+/* overlay light */
+#playstation__five .carousel div{
+    opacity: 0.8;
+}
+#playstation__five .carousel div:hover{
+    opacity: 1;
+    border-bottom: 2px solid blue;
+}
+#playstation__five .carousel div:hover > *{
+    transform: scale(0.9);
 
+}
 /*////playstation five*/
