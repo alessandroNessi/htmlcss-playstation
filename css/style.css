@@ -1,6 +1,6 @@
 /*debugger*/
 *{
-    background-color: rgba(50, 0, 0, 0.25);
+    /* background-color: rgba(50, 0, 0, 0.25); */
 }
 /*////debugger*/
 /* common rules */
@@ -14,7 +14,7 @@ main{
     margin-top: 5rem;
 }
 section{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .carousel>*{
     padding: 10px;
@@ -26,6 +26,9 @@ section{
     width: 100%;
     border-radius: 10px;
     display: block;
+}
+.subtitle{
+    color: #727272;
 }
 /*buttons*/
 button{
@@ -71,7 +74,7 @@ button{
     background-position:50% 0%;
 }
 .returnal__logo{
-    height: 35px;
+    height: 40px;
 }
 #new__exit *, #most__sold *{
     color: white;
@@ -116,7 +119,7 @@ header{
     background-image: url("../img/jumbo-bg.png");
 }
 #most__sold .banner__big{
-    padding: 200px 20px 20px 20px;
+    padding: 250px 20px 20px 20px;
 }
 #most__sold .carousel div:hover img{
    padding: 4px;
@@ -140,7 +143,7 @@ header{
 }
 /* overlay light */
 #playstation__five .carousel div{
-    opacity: 0.8;
+    opacity: 0.7;
 }
 #playstation__five .carousel div:hover{
     opacity: 1;
