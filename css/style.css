@@ -4,6 +4,9 @@
 }
 /*////debugger*/
 /* common rules */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 ul{
     list-style: none;
 }
@@ -24,19 +27,51 @@ section{
     border-radius: 10px;
     display: block;
 }
-main button{
-    padding: 0 15px;
-    line-height: 40px;
-    vertical-align: middle;
-    border-radius: 20px;
+/*buttons*/
+button{
+    padding: 10px 20px;
     border-width: 0;
+    color: white;
 }
+.button--gray{
+    background: #363636;
+}
+.button--gray:hover{
+    box-shadow: inset 0 0 0 3px #363636, inset 0 0 0 5px #fff;
+}
+.button--tomato{
+    background: #cd3d0f;
+}
+.button--tomato:hover{
+    box-shadow: inset 0 0 0 3px #cd3d0f, inset 0 0 0 5px #000;
+}
+.button--blue{
+    background: #2d64e6;
+}
+.button--blue:hover{
+    box-shadow: inset 0 0 0 3px #2d64e6, inset 0 0 0 5px #fff;
+}
+.button--white{
+    background: #fff;
+    color: black;
+}
+.button--white:hover{
+    box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 5px #000;
+}
+.button--opacity{
+    background: rgba(0,0,0,0.5);
+    color: #2d64e6;
+}
+.button--opacity:hover{
+    box-shadow: inset 0 0 0 3px rgba(0,0,0,0.5), inset 0 0 0 5px #fff;
+}
+/*buttons*/
 /* banner rules */
 .banner__big{
     background-position:50% 0%;
 }
 .returnal__logo{
-    width: 250px;
+    height: 35px;
 }
 #new__exit *, #most__sold *{
     color: white;
@@ -55,6 +90,9 @@ header{
     top: 0;
     z-index: 1;
 }
+.header__bottom .navbar{
+    padding: 0;
+}
 .header__top{
     height: 1.5rem;
     padding: 5px;
@@ -63,8 +101,14 @@ header{
     background-color: white;
     height: 3.5rem;
 }
+.header__bottom .lens{
+    height: 1.5rem;
+}
 .header__bottom nav{
     width: 100%;
+}
+.header__bottom ul li{
+    padding: 0 10px;
 }
 /* ////header */
 /* most sold */
@@ -77,13 +121,22 @@ header{
 #most__sold .carousel div:hover img{
    padding: 4px;
     width: calc(100% - 10px);
-    border:2px solid lightskyblue;
+    border:2px solid #2d64e6;
+}
+.droplist_icon::after{
+    content: url('../img/chevron-down-solid.svg');
+    display: inline-block;
+    width: 10px;
+    margin-left: 0.4rem;
+}
+.header__bottom .navbar a.nav-link:hover .droplist_icon::after{
+    content: url('../img/chevron-down-solid-hover.svg');
 }
 /* ////most sold */
 /*playstation five*/
 #playstation__five .comment{
     margin-bottom: 0;
-    color: lightskyblue;
+    color: #2d64e6;
 }
 /* overlay light */
 #playstation__five .carousel div{
@@ -91,7 +144,7 @@ header{
 }
 #playstation__five .carousel div:hover{
     opacity: 1;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #2d64e6;
 }
 #playstation__five .carousel div:hover > *{
     transform: scale(0.9);
@@ -105,7 +158,7 @@ header{
 #most__sold .carousel div:hover img{
    padding: 4px;
     width: calc(100% - 10px);
-    border:2px solid lightskyblue;
+    border:2px solid #2d64e6;
 }
 #new__exit .banner__big{
     padding: 20px;
