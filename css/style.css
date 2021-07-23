@@ -80,7 +80,7 @@ button{
 #new__exit *, #most__sold *{
     color: white;
 }
-.banner__small img{
+img.banner__small{
     width: 100%;
 }
 /*////banner rules*/
@@ -95,7 +95,7 @@ header{
     z-index: 1;
 }
 .header__bottom .navbar{
-    padding: 0;
+    padding: 0 1rem;
 }
 .header__top{
     height: 1.5rem;
@@ -178,7 +178,7 @@ header{
 #playstation__plus .container-fluid{
     background-color: #bebcbb;
 }
-#playstation__plus .playstation__plus--logo{
+#playstation__plus .playstation__plus--logo, #playstation__now .playstation__now--logo{
     width: 350px;
 }
 #playstation__plus .row{
@@ -192,4 +192,10 @@ header{
 #playstation__now .container-fluid{
     background-color: #161c3b;
 }
+
 /*////playstation now*/
+/*social*/
+#social .sopcial__icon{
+
+}
+/*////social*/
