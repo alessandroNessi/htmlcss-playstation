@@ -14,7 +14,8 @@ main{
     margin-top: 5rem;
 }
 section{
-    margin-bottom: 100px;
+    padding-bottom: 50px;
+    margin-top: 50px;
 }
 .carousel>*{
     padding: 10px;
@@ -159,11 +160,17 @@ header{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");    
 }
 #most__sold .carousel div:hover img{
-   padding: 4px;
+    padding: 4px;
     width: calc(100% - 10px);
     border:2px solid #2d64e6;
 }
 #new__exit .banner__big{
     padding: 20px;
+}
+.new__exit--logo{
+    width: 200px;
+}
+#new__exit{
+    background-color: #1f1f1f;
 }
 /* ////new exit */
