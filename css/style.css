@@ -1,7 +1,7 @@
 /*debugger*/
-*{
-    /* background-color: rgba(50, 0, 0, 0.25); */
-}
+/* *{
+    background-color: rgba(50, 0, 0, 0.25);
+} */
 /*////debugger*/
 /* common rules */
 body{
@@ -9,6 +9,9 @@ body{
 }
 ul{
     list-style: none;
+}
+a{
+    text-decoration: none;
 }
 main{
     margin-top: 5rem;
@@ -205,3 +208,25 @@ header{
     padding: 0.5rem;
 }
 /*////social*/
+/* footer */
+footer .container-fluid{
+    padding: 30px 0;
+    background-color: #00439c;
+}
+footer *{
+    color: white;
+    font-size: 10px;
+}
+footer .footer__logo--play{
+    width: 100px;
+}
+footer .footer__logo--siae{
+    width: 75px;
+}
+footer .footer__logo--globe{
+    width: 18px;
+}
+footer .info__link{
+    text-decoration: underline;
+}
+/* ////footer */
