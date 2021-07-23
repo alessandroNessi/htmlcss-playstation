@@ -195,7 +195,13 @@ header{
 
 /*////playstation now*/
 /*social*/
-#social .sopcial__icon{
-
+#social .social__icon{
+    max-width: 100px;
+}
+#social .icons__container [class*=col]{
+    padding: 0;
+}
+#social .icons__container a{
+    padding: 0.5rem;
 }
 /*////social*/
