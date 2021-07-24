@@ -39,6 +39,7 @@ button{
     padding: 10px 20px;
     border-width: 0;
     color: white;
+    transition: box-shadow 0.25s;
 }
 .button--gray{
     background: #363636;
@@ -104,6 +105,10 @@ header{
     height: 1.5rem;
     padding: 5px;
 }
+header .header__bottom .fixed__top{
+    position: fixed;
+    top: 1.5rem;
+}
 .header__bottom{
     background-color: white;
     height: 3.5rem;
@@ -166,6 +171,26 @@ header{
     padding: 4px;
     width: calc(100% - 10px);
     border:2px solid #2d64e6;
+    position:relative;
+    animation-name: moving__img;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+#most__sold .carousel div:not(:hover) img{
+    animation-name: moving__img--back;
+    animation-duration: 1s;
+}
+@keyframes moving__img--back {
+    0%       {bottom: 20px;}
+    100%    {bottom: 0px}
+}
+@keyframes moving__img{
+    0%       {bottom: 0;}
+    100%    {bottom: 20px}
+}
+#most__sold .carousel div *{
+    transition: all 0.5s;
+    position: relative;
 }
 #new__exit .banner__big{
     padding: 20px;
@@ -200,12 +225,16 @@ header{
 /*social*/
 #social .social__icon{
     max-width: 100px;
+    transition: padding 0.3s;
 }
 #social .icons__container [class*=col]{
     padding: 0;
 }
 #social .icons__container a{
     padding: 0.5rem;
+}
+#social .social__icon:hover{
+    padding: 3px;
 }
 /*////social*/
 /* footer */
@@ -227,6 +256,12 @@ footer .footer__logo--globe{
     width: 18px;
 }
 footer .info__link{
+    text-decoration: underline;
+}
+footer .link__list a{
+    color: white;
+}
+footer .link__list li:hover a{
     text-decoration: underline;
 }
 /* ////footer */
