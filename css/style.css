@@ -159,6 +159,14 @@ header .header__bottom .fixed__top{
     width: 10px;
     margin-left: 0.4rem;
 }
+.show .droplist_icon::after{
+    content: url('../img/chevron-down-solid.svg');
+    display: inline-block;
+    width: 10px;
+    margin-left: 0.4rem;
+    transform:rotate(180deg);
+    transition: transform 0.2s;
+}
 .header__bottom .navbar a.nav-link:hover .droplist_icon::after{
     content: url('../img/chevron-down-solid-hover.svg');
 }
