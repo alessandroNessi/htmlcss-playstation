@@ -2,6 +2,17 @@
 /* *{
     background-color: rgba(50, 0, 0, 0.25);
 } */
+/* Variable declarations */
+:root {
+    --blue_300: #2d64e6;
+    --blue_400:#00439c;
+    --red_200: #cd3d0f;
+    --gray_200: #bebcbb;
+    --gray_300: #727272;
+    --gray_400: #363636;
+    --gray_500: #161c3b;
+}
+/*end variabiles*/
 .test{
     width: 100vw;
     margin-top: -.125rem !important;
@@ -38,7 +49,7 @@ section{
     display: block;
 }
 .subtitle{
-    color: #727272;
+    color: var(--lightgray);
 }
 /*buttons*/
 button{
@@ -48,22 +59,22 @@ button{
     transition: box-shadow 0.25s;
 }
 .button--gray{
-    background: #363636;
+    background: var(--gray_400);
 }
 .button--gray:hover{
-    box-shadow: inset 0 0 0 3px #363636, inset 0 0 0 5px #fff;
+    box-shadow: inset 0 0 0 3px var(--gray_400) , inset 0 0 0 5px #fff;
 }
 .button--tomato{
-    background: #cd3d0f;
+    background: var(--red_200);
 }
 .button--tomato:hover{
-    box-shadow: inset 0 0 0 3px #cd3d0f, inset 0 0 0 5px #000;
+    box-shadow: inset 0 0 0 3px var(--red_200), inset 0 0 0 5px #000;
 }
 .button--blue{
-    background: #2d64e6;
+    background: var(--blue_300);
 }
 .button--blue:hover{
-    box-shadow: inset 0 0 0 3px #2d64e6, inset 0 0 0 5px #fff;
+    box-shadow: inset 0 0 0 3px var(--blue_300), inset 0 0 0 5px #fff;
 }
 .button--white{
     background: #fff;
@@ -74,7 +85,7 @@ button{
 }
 .button--opacity{
     background: rgba(255,255,255,0.5);
-    color: #2d64e6;
+    color: var(--blue_300);
 }
 .button--opacity:hover{
     box-shadow: inset 0 0 0 3px rgba(0,0,0,0.5), inset 0 0 0 5px #fff;
@@ -109,7 +120,7 @@ header{
     color: black;
 }
 .first--item{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--gray_300);
 }
 .second--item{
     list-style: disc;
@@ -151,7 +162,7 @@ header .header__bottom .fixed__top{
 #most__sold .carousel div:hover img{
    padding: 4px;
     width: calc(100% - 10px);
-    border:2px solid #2d64e6;
+    border:2px solid var(--blue_300);
 }
 .droplist_icon::after{
     content: url('../img/chevron-down-solid.svg');
@@ -174,7 +185,7 @@ header .header__bottom .fixed__top{
 /*playstation five*/
 #playstation__five .comment{
     margin-bottom: 0;
-    color: #2d64e6;
+    color: var(--blue_300);
 }
 /* overlay light */
 #playstation__five .carousel div{
@@ -183,7 +194,7 @@ header .header__bottom .fixed__top{
 }
 #playstation__five .carousel div:hover{
     opacity: 1;
-    border-bottom: 2px solid #2d64e6;
+    border-bottom: 2px solid var(--blue_300);
 }
 #playstation__five .carousel div:hover > *{
     transform: scale(0.9);
@@ -201,7 +212,7 @@ header .header__bottom .fixed__top{
 #most__sold .carousel div:hover img{
     padding: 4px;
     width: calc(100% - 10px);
-    border:2px solid #2d64e6;
+    border:2px solid var(--blue_300);
     position:relative;
     bottom: 20px;
     /* animation-name: moving__img;
@@ -231,12 +242,12 @@ header .header__bottom .fixed__top{
     width: 200px;
 }
 #new__exit{
-    background-color: #1f1f1f;
+    background-color: var(--gray_400);
 }
 /* ////new exit */
 /*playstation plus*/
 #playstation__plus .container-fluid{
-    background-color: #bebcbb;
+    background-color: var(--gray_200);
 }
 #playstation__plus .playstation__plus--logo, #playstation__now .playstation__now--logo{
     width: 350px;
@@ -250,7 +261,7 @@ header .header__bottom .fixed__top{
 /* ////on sale */
 /*playstation now*/
 #playstation__now .container-fluid{
-    background-color: #161c3b;
+    background-color: var(--gray_500);
 }
 
 /*////playstation now*/
@@ -272,7 +283,7 @@ header .header__bottom .fixed__top{
 /* footer */
 footer .container-fluid{
     padding: 30px 0;
-    background-color: #00439c;
+    background-color: var(--blue_400);
 }
 footer *{
     color: white;
