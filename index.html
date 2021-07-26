@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
         <div class="header__top d-flex justify-content-end">
             <img src="img/sony_logo.svg" alt="sony logo">
         </div>
-        <div class="header__bottom d-flex flex-nowrap justify-content-between align-items-center">
+        <div class="header__bottom dropdown d-flex flex-nowrap justify-content-between align-items-center">
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed__top">
                 <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt="palystation-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,28 +36,232 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span
-                                    class="droplist_icon">Giochi</span></a>
+                            <a class="nav-link active" href="#" id="dropdownMenuGiochi" data-bs-toggle="dropdown" aria-current="page">
+                                <span class="droplist_icon">Giochi</span>
+                            </a>
+                            <div class="test dropdown-menu" aria-labelledby="dropdownMenuGiochi">
+                                <ul class="dropdown-item first--item d-flex justify-content-center">
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>    
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-item second--item d-flex justify-content-center">
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link giochi</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span
-                                    class="droplist_icon">Hardware</span></a>
+                            <a class="nav-link active" href="#" id="dropdownMenuHardware" data-bs-toggle="dropdown" aria-current="page">
+                                <span class="droplist_icon">Hardware</span>
+                            </a>
+                            <div class="test dropdown-menu" aria-labelledby="dropdownMenuHardware">
+                                <ul class="dropdown-item first--item d-flex justify-content-center">
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>    
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-item second--item d-flex justify-content-center">
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link Hardware</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span
-                                    class="droplist_icon">Servizi</span></a>
+                            <a class="nav-link active" href="#" id="dropdownMenuServizi" data-bs-toggle="dropdown" aria-current="page">
+                                <span class="droplist_icon">Servizi</span>
+                            </a>
+                            <div class="test dropdown-menu" aria-labelledby="dropdownMenuServizi">
+                                <ul class="dropdown-item first--item d-flex justify-content-center">
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>    
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-item second--item d-flex justify-content-center">
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link Servizi</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span
-                                    class="droplist_icon">Novità</span></a>
+                            <a class="nav-link active" href="#" id="dropdownMenuNovita" data-bs-toggle="dropdown" aria-current="page">
+                                <span class="droplist_icon">Novita</span>
+                            </a>
+                            <div class="test dropdown-menu" aria-labelledby="dropdownMenuNovita">
+                                <ul class="dropdown-item first--item d-flex justify-content-center">
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>    
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-item second--item d-flex justify-content-center">
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link Novità</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span class="droplist_icon">Fai
-                                    acquisti</span></a>
+                            <a class="nav-link active" href="#" id="dropdownMenuAcquisti" data-bs-toggle="dropdown" aria-current="page">
+                                <span class="droplist_icon">Fai Acquisti</span>
+                            </a>
+                            <div class="test dropdown-menu" aria-labelledby="dropdownMenuAcquisti">
+                                <ul class="dropdown-item first--item d-flex justify-content-center">
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>    
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-item second--item d-flex justify-content-center">
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link Fai acquisti</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span
-                                    class="droplist_icon">Supporto</span></a>
+                            <a class="nav-link active" href="#" id="dropdownMenuSupporto" data-bs-toggle="dropdown" aria-current="page">
+                                <span class="droplist_icon">Supporto</span>
+                            </a>
+                            <div class="test dropdown-menu" aria-labelledby="dropdownMenuSupporto">
+                                <ul class="dropdown-item first--item d-flex justify-content-center">
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>    
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                    <li class="d-flex flex-column align-items-center">
+                                        <a class="link--ps6 d-flex flex-column align-items-center" href="#">
+                                            <img src="img/play-menu-ico.png" alt="play menu icon">
+                                            <p class="color--black">PS6</p> 
+                                        </a>   
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-item second--item d-flex justify-content-center">
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link Supporto</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                    <li class="me-5">
+                                        <a class="link--ps6 color--black" href="#">Sub link</a>    
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
@@ -75,21 +279,7 @@
                     </ul>
                 </div>
             </nav>
-            <!-- <nav class="d-none d-lg-flex justify-content-between">
-                    <ul class="navbar-left d-flex">
-                        <li>ciao</li>
-                        <li>miao</li>
-                        <li>bau</li>
-                    </ul>
-                    <ul class="navbar-right d-flex">
-                        <li>miao</li>
-                        <li><button>bottone</button></li>
-                        <li>fontawesomelens</li>
-                    </ul>
-                </nav>
-                <button class="hamburger d-block d-lg-none ">
-                    hamburger button
-                </button> -->
+        </div>
     </header>
     <!-- ////HEADER -->
     <main>
@@ -157,23 +347,23 @@
                 </div>
                 <div class="row row-cols-3 row-cols-md-5 flex-wrap carousel">
                     <div class="col text-center p-4">
-                        <img src="img/playstation-5-thumb.png" alt="">
+                        <img src="img/playstation-5-thumb.png" alt="playstation 5 link">
                         <p>Console ps5</p>
                     </div>
                     <div class="col text-center p-4">
-                        <img src="img/joypad-thumb.png" alt="">
+                        <img src="img/joypad-thumb.png" alt="joypad link">
                         <p>Controller wireless DuealSense<sup><i class="fas fa-trademark"></i></sup></p>
                     </div>
                     <div class="col text-center p-4">
-                        <img src="img/headset-thumb.png" alt="">
+                        <img src="img/headset-thumb.png" alt="headset link">
                         <p>Cuffie wireless co microfono PULSE 4<sup><i class="fas fa-trademark"></i></sup></p>
                     </div>
                     <div class="col text-center p-4">
-                        <img src="img/remote-thumb.png" alt="">
+                        <img src="img/remote-thumb.png" alt="remote controller link">
                         <p>Telecomando Media</p>
                     </div>
                     <div class="col text-center p-4">
-                        <img src="img/camera-thumb.jpg" alt="">
+                        <img src="img/camera-thumb.jpg" alt="webcam link">
                         <p>Telecamera HD</p>
                     </div>
                 </div>
@@ -282,13 +472,13 @@
                         <button class="rounded-pill button--blue">Scopri di più</button>
                     </div>
                     <div class="col-12 p-5 col-md-4">
-                        <img class="pb-2" src="img/double11-202010-tw-psvr.jpg" alt="playstation 4">
+                        <img class="pb-2" src="img/double11-202010-tw-psvr.jpg" alt="ps4 vr">
                         <h2 class="pb-2">PlayStation VR</h2>
                         <p class="pb-2">Oltre 500 titoli ed esperienze di gioco. Scoprili tutti.</p>
                         <button class="rounded-pill button--blue">Scopri di più</button>
                     </div>
                     <div class="col-12 p-5 col-md-4">
-                        <img class="pb-2" src="img/dualshock-4-listing-thumb.jpg" alt="playstation 4">
+                        <img class="pb-2" src="img/dualshock-4-listing-thumb.jpg" alt="ps4 dualshock">
                         <h2 class="pb-2">Accessori</h2>
                         <p class="pb-2">Migliora la tua esperienza PS4 con una gamma di accessori ufficiali.</p>
                         <button class="rounded-pill button--blue">Scopri di più</button>
@@ -302,7 +492,7 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col py-5 p-lg-3 col-md-6">
+                        <div class="col py-5 py-md-0 p-lg-3 col-md-4 col-lg-6">
                             <img class="playstation__plus--logo pb-3" src="img/ps-plus-logo.png"
                                 alt="playstation plus logo">
                             <p class="pb-2">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore
@@ -311,7 +501,7 @@
                                 Esplora PlayStation Plus
                             </button>
                         </div>
-                        <div class="d-none d-md-block col-md-6">
+                        <div class="d-none d-md-block col-md-8 col-lg-6">
                             <img class="banner__small" src="img/ps-plus-april-monthly-games-featured-image-block.png"
                                 alt="playstation plus april">
                         </div>
@@ -352,7 +542,7 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col py-5 p-lg-3 col-md-6">
+                        <div class="col py-5 py-md-0 p-lg-3 col-md-4 col-lg-6">
                             <img class="playstation__now--logo pb-3" src="img/ps-now-logo-two-column.png"
                                 alt="playstation plus logo">
                             <p class="pb-2 text-white">Ottieni l'accesso immediato a una vastissima raccolta di oltre
@@ -362,8 +552,8 @@
                                 Esplora PlayStation Now
                             </button>
                         </div>
-                        <div class="d-none d-md-block col-md-6">
-                            <img class="banner__small" src="img/ps-now-april-featured-image-block.png"
+                        <div class="d-none d-md-block col-md-8 col-lg-6">
+                            <img class="banner__small p" src="img/ps-now-april-featured-image-block.png"
                                 alt="playstation now april">
                         </div>
                     </div>
@@ -385,15 +575,15 @@
                             <img class="social__icon" src="img/twitter.jpg" alt="twitter logo">
                         </a>
                         <a href="#">
-                            <img class="social__icon" src="img/facebook.jpg" alt="twitter logo">
+                            <img class="social__icon" src="img/facebook.jpg" alt="facebook logo">
                         </a>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
                         <a href="#">
-                            <img class="social__icon" src="img/instagram.jpg" alt="twitter logo">
+                            <img class="social__icon" src="img/instagram.jpg" alt="instagram logo">
                         </a>
                         <a href="#">
-                            <img class="social__icon" src="img/youtube.png" alt="twitter logo">
+                            <img class="social__icon" src="img/youtube.png" alt="youtube logo">
                         </a>
                     </div>
                 </div>
