@@ -14,12 +14,12 @@
     --gray_500: #161c3b;
 }
 /*end variabiles*/
-/* .test{
-    width: 100vw;
-    margin-top: -.125rem !important;
+.nav-item .dropdown__width{
+    width: 100%;
+    margin-top: -.125rem;
     border: 0;
     background-color: white;
-} */
+}
 /*////debugger*/
 /* common rules */
 body{
@@ -115,7 +115,6 @@ header{
     position: fixed;
     top: 0;
     z-index: 1;
-    font-weight: 500;
 }
 /*navbar dropdow*/
 .color--black{
@@ -218,22 +217,7 @@ header .header__bottom .fixed__top{
     border:2px solid var(--blue_300);
     position:relative;
     bottom: 20px;
-    /* animation-name: moving__img;
-    animation-duration: 1s;
-    animation-fill-mode:forwards; */
 }
-/* #most__sold .carousel div:not(:hover) img{
-    animation-name: moving__img--back;
-    animation-duration: 1s;
-}
-@keyframes moving__img--back {
-    0%       {bottom: 20px;}
-    100%    {bottom: 0px}
-}
-@keyframes moving__img{
-    0%       {bottom: 0;}
-    100%    {bottom: 20px}
-} */
 #most__sold .carousel div *{
     transition: all 0.5s;
     position: relative;
