@@ -4,6 +4,7 @@
 } */
 /* Variable declarations */
 :root {
+    --blue_200: #0775cf;
     --blue_300: #2d64e6;
     --blue_400:#00439c;
     --red_200: #cd3d0f;
@@ -13,12 +14,12 @@
     --gray_500: #161c3b;
 }
 /*end variabiles*/
-.test{
+/* .test{
     width: 100vw;
     margin-top: -.125rem !important;
     border: 0;
     background-color: white;
-}
+} */
 /*////debugger*/
 /* common rules */
 body{
@@ -49,7 +50,7 @@ section{
     display: block;
 }
 .subtitle{
-    color: var(--lightgray);
+    color: var(--gray_300);
 }
 /*buttons*/
 button{
@@ -114,6 +115,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 1;
+    font-weight: 500;
 }
 /*navbar dropdow*/
 .color--black{
@@ -185,7 +187,7 @@ header .header__bottom .fixed__top{
 /*playstation five*/
 #playstation__five .comment{
     margin-bottom: 0;
-    color: var(--blue_300);
+    color: var(--blue_200);
 }
 /* overlay light */
 #playstation__five .carousel div{
@@ -203,7 +205,8 @@ header .header__bottom .fixed__top{
 /*////playstation five*/
 /* new exit */
 #new__exit .banner__big{
-    background-image: url("../img/lighthouse-img/it-takes-two-hero-banner-desktop.jpg");    
+    background-image: url("../img/lighthouse-img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;    
 }
 #most__sold .carousel div{
     transition-property: position;
