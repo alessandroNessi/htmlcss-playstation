@@ -154,7 +154,7 @@ header .header__bottom .fixed__top{
 /* ////header */
 /* most sold */
 #most__sold .banner__big{
-    background-image: url("../img/jumbo-bg.png");
+    background-image: url("../img/lighthouse-img/jumbo-bg.jpg");
 }
 #most__sold .banner__big{
     padding: 250px 20px 20px 20px;
@@ -203,7 +203,7 @@ header .header__bottom .fixed__top{
 /*////playstation five*/
 /* new exit */
 #new__exit .banner__big{
-    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");    
+    background-image: url("../img/lighthouse-img/it-takes-two-hero-banner-desktop.jpg");    
 }
 #most__sold .carousel div{
     transition-property: position;
@@ -308,3 +308,13 @@ footer .link__list li:hover a{
     text-decoration: underline;
 }
 /* ////footer */
+/* media to slim the page */
+@media screen and (min-width: 720px){
+    #most__sold .banner__big{
+        background-size: cover;
+        background-image: url("../img/jumbo-bg.png");
+    }
+    #new__exit .banner__big{
+        background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");    
+    }
+}
